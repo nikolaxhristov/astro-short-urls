@@ -1,0 +1,34 @@
+{
+	"name": "astro-short-urls",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "🔗 AstroJS URL shortener. Automatically shorten all your external URLs.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Playform/astro-short-urls.git"
+	},
+	"homepage": "https://github.com/Playform/astro-short-urls#readme",
+	"bugs": {
+		"url": "https://github.com/Playform/astro-short-urls/issues"
+	},
+	"author": "Nikola Hristov <nikola@playform.cloud>",
+	"license": "SEE LICENSE IN LICENSE",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"keywords": [
+		"astro-component",
+		"shortener",
+		"short",
+		"urls",
+		"astro"
+	],
+	"scripts": {
+		"build": "esbuild --format=esm --platform=node --target=node14 --sources-content=false --minify --outdir=dist src/index.ts && tsc"
+	},
+	"devDependencies": {
+		"@types/node": "18.6.2",
+		"astro": "1.0.0-rc.2",
+		"esbuild": "0.14.51",
+		"typescript": "4.7.4"
+	}
+}

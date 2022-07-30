@@ -1,0 +1,1 @@
+function n(r={}){var o;const t=Object.assign({url:"/",logger:2},r);return t.url=(o=t.url)!=null&&o.endsWith("/")?t.url:`${t.url}/`,{name:"astro-short-urls",hooks:{"astro:build:done":async()=>{}}}}export{n as default};
