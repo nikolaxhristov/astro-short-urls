@@ -46,7 +46,6 @@ import { defineConfig } from "astro/config";
 import shortURLs from "astro-short-urls";
 
 export default defineConfig({
-	// ...
 	integrations: [shortURLs()],
 });
 ```
